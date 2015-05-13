@@ -6,7 +6,7 @@ int main()
           
           cout<<"digite nota: ";
           cin>>nota;
-          while (nota>= 0 && nota <= 10)
+          while (nota<= 0 || nota >= 10)
           {
                 cout<<"Digite nota: ";
                 cin>>nota;
@@ -15,3 +15,27 @@ int main()
           system("pause");
           
 }
+
+
+----------------------------------------------outro---------------
+#include<iostream>
+using namespace std;
+int main()
+{
+          float num;
+          
+          
+          do
+          {
+                cout<<" digite numero: \n";
+                cin>>num;
+                cout<<" o triplo "<<num*3<<"\n";
+               
+                
+          }
+          while (num!=-999);
+         
+
+          
+          system("pause");
+          
