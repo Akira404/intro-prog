@@ -39,3 +39,76 @@ int main()
           
           system("pause");
           
+------------------------------------------------ouyto---------------
+#include<iostream>
+using namespace std;
+int main()
+{
+          float pa=5000000, pb=7000000;
+          int cont=0;
+          
+          while (pa<=pb)
+          {
+                                pa = pa + pa * 0.03;
+                                pb = pb + pb * 0.02;
+                                cont++;
+                               
+          }
+          cout<<"levou "<<cont<< " anos para ultrapassar PB \n";
+         
+
+          
+          system("pause");
+          
+}
+
+------------------------------------------------ouyto---------------
+#include<iostream>
+using namespace std;
+int main()
+{
+    float sal,soma=0;
+    int id, cont=0,contfem=0, maior;
+    char sexo,resp;
+    
+    do
+    { 
+    cout<<"Digite Salario: ";
+    cin>>sal;
+    cout<<"Digite idade: ";
+    cin>>id;
+    cout<<"Digite sexo (M ou F): ";
+    cin>>sexo;
+    sexo = toupper(sexo);//converte caractere p/ maiusculo
+    soma+=sal; // ou soma = soma + sal
+    cont++;
+    if (sexo == 'F' && sal <=1000)
+      contfem++;
+    
+    if (sexo == 'M')
+      {
+             if (cont == 1)
+                maior = id;
+             else
+               if (id > maior)
+                 maior = id;
+    }
+    
+    cout<<"Deseja repetir s ou n? ";
+    cin>>resp;
+    resp = toupper(resp);
+    while (resp != 'S' && resp != 'N')
+	 {
+		
+         cout<<"Deseja repetir s ou n? ";
+         cin>>resp;
+         resp = toupper(resp);
+         }
+    }
+    while (resp == 'S');
+    
+    cout<<"Media salrios= "<<soma/cont<<"\n";
+    cout<<"Mulheres ate R$1000= "<<contfem<<"\n";
+    cout<<"Maior idade masculina= "<<maior<<"\n";
+    system("pause");
+}
