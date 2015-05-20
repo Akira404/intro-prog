@@ -1,1 +1,56 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x, num[5];
+    //trecho de entrada
+    for(x=0;x<=4;x++)
+    {
+     cout<<"Digite valor: ";
+     cin>>num[x];
+    }
+    //trecho de teste e saída
+    for(x=0;x<=4;x++)
+    {
+     if (num[x] % 2 == 0)
+       cout<<num[x]<<"\t E PAR \n";
+     else
+       cout<<num[x]<<"\t E IMPAR \n";
+    }
+system("pause");
+return 0;
+}
+
+----------- exercicio 1 -----------
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x,  cont = 0, soma=0,id[10];
+    //trecho de entrada
+    cout<<"DIGITE 10 VALORES \n";
+    for(x=0;x<=9;x++)
+    {
+     cout<<"Digite "<< x + 1<<" valor: ";
+     cin>>id[x];
+    }
+    //trecho de teste e saída
+    for(x=0;x<=9;x++)
+    {
+     if (id[x] > 20)
+     {
+     cout<<id[x]<<"\t ESTA ACIMA DE 20 \n";
+     cont++;// contador
+     soma+=id[x]; //soma = soma + id[x]
+     }
+    }
+    cout<<"\n total de valores acima de 20 anos = "<<cont<<"\n";
+    cout<<"soma das idades = "<<soma<<"\n";
+system("pause");
+return 0;
+}
+
+----------- exercicio 2 -----------
+
 
