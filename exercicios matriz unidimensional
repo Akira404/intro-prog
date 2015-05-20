@@ -54,3 +54,34 @@ return 0;
 ----------- exercicio 2 -----------
 
 
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    int x, tamanho; 
+    char nome[40];
+    //trecho de entrada
+    cout<<"digite nome \n";
+    gets(nome);
+    strupr(nome);//converte todos caracteres p/ maiusculo
+    tamanho = strlen(nome); //quantidade de caracteres
+    
+    for(x=0;x < tamanho;x++)
+    {
+     switch (nome[x])
+     {
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':cout<<nome[x]<<"\t";
+     }
+    }    
+system("pause");
+return 0;
+}
+
+----------- exercicio 3 -----------
+
+
