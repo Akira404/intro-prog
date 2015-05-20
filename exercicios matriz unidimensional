@@ -82,6 +82,60 @@ system("pause");
 return 0;
 }
 
------------ exercicio 3 -----------
+----------- exercicio 2.1 com if -----------
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    int x, tamanho; 
+    char nome[40];
+    //trecho de entrada
+    cout<<"Digite um nome: ";
+    gets(nome);//leia vetor de caracteres
+    strupr(nome);//converte todos caracteres p/ maiusculo
+    tamanho = strlen(nome); //quantidade de caracteres
+    cout<<"\n";
+    for(x=0;x < tamanho;x++)
+    {
+     if(nome[x]=='A'||nome[x]=='E'||nome[x]=='I'||nome[x]=='O'||nome[x]=='U')
+        cout<<nome[x]<<"\t";
+    }    
+system("pause");
+return 0;
+}
+
+----------- exercicio 3  -----------
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    int x, tamanho; 
+    char nome[40];
+    //trecho de entrada
+    cout<<"Digite um nome: ";
+    gets(nome);
+    strupr(nome);//converte todos caracteres p/ maiusculo
+    tamanho = strlen(nome); //quantidade de caracteres
+    cout<<"\n";
+    for(x=0;x < tamanho;x++)
+    {
+     switch (nome[x])
+     {
+            case 'A': nome[x] ='?';break;
+            case 'E': nome[x] = '#';break;
+            case 'I': nome[x] = '!';break;
+            case 'O': nome[x] = 'Z';break;
+            case 'U': nome[x] = 'W';break;
+     }
+    }  
+    
+    cout<<nome<<"\n";  
+system("pause");
+return 0;
+}
+
+
 
 
