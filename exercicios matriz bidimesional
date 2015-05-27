@@ -1,1 +1,65 @@
+//imc com vetores matriz.cpp
+
+#include<iostream>
+#include<cmath>
+#include<cstring>
+using namespace std;
+int main()
+{
+    float medidas[3][3];
+    int i;
+    char nomepac[3][40];
+    //Trecho entrada   
+    for (i=0;i<=2;i++)
+    {
+        fflush(stdin);
+        cout<<"Digite nome paciente:";
+        gets(nomepac[i]);
+        strupr(nomepac[i]);
+        cout<<"Digie Peso: ";
+        cin>>medidas[i][0];
+        cout<<"Digite Altura: ";
+        cin>>medidas[i][1];
+        medidas[i][2] = medidas[i][0]/pow(medidas[i][1],2);
+    }
+    //Trecho de saída
+    cout<<" NOME \t PESO \t ALTURA \n";
+for (i=0;i<=2;i++)
+{
+cout<<nomepac[i]<<"\t"<< medidas[i][0]<<"\t"<<medidas[i][1]<<"\t"<<medidas[i][2]<<"\n";
+}
+system ("pause");
+return 0;
+}
+
+____________________________
+//armazenar os valores para uma matriz 3x3
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,j, mat[3][3];
+    
+    //Trecho entrada   
+    for (i=0;i<=2;i++)
+    for (j=0;j<=2;j++)
+    {
+        cout<<"Digite valor: ["<<i+1<<j+1<<"] ";
+        cin>>mat[i][j];
+    }
+    //trecho de saída
+    for (i=0;i<=2;i++)
+    for (j=0;j<=2;j++)
+    {
+        cout<<mat[i][j]<<"\n";
+       
+    }
+    
+system ("pause");
+return 0;
+}
+
+________________________________________________________________________
+//armazenar
 
