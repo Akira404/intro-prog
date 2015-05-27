@@ -61,5 +61,58 @@ return 0;
 }
 
 ________________________________________________________________________
+//soma diagonal
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,j, mat[3][3];
+    
+    //Trecho entrada   
+    for (i=0;i<=2;i++)
+    for (j=0;j<=2;j++)
+    {
+        cout<<"Digite valor: ["<<i+1<<j+1<<"] ";
+        cin>>mat[i][j];
+    }
+    //trecho de saída
+   
+    for (j=0;j<=2;j++)
+    {
+        cout<<mat[j][j]<<"\n";
+       
+    }
+    
+system ("pause");
+return 0;
+}
+
+----
+//colunas pares
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,j, mat[3][3],soma=0;
+    
+    //Trecho entrada   
+    for (i=0;i<=2;i++)
+    for (j=0;j<=2;j++)
+    {
+        cout<<"Digite valor: ["<<i+1<<j+1<<"] ";
+        cin>>mat[i][j];  
+    }
+    //trecho de processamento
+   for(i=0;i<=2;i++)
+    for (j=0;j<=2;j+=2)
+    {
+        soma+=mat[i][j];
+    } 
+    cout<<"Soma das colunas pares= "<<soma<<"\n";
+system ("pause");
+return 0;
+}
+
 //armazenar
 
