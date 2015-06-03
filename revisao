@@ -1,0 +1,79 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+ 	float inv, valor;
+ 	
+cout<<"investimento tipo 1 | poupaca | rendimento de 3% AM \n";
+cout<<"investimento tipo 2 | fundos renda puplica | rendimento de 4% AM \n";
+cout<<"selecione o investimento";
+cin>>inv;
+
+if (inv ==1)
+	{
+	   cout<<" digite quanto deseja investir \n";
+	   cin>>valor;
+	   cout<<"renda mensal de : "<<valor*0.03<<"\n";
+	}
+	else
+	{
+		if(inv ==2)
+		{
+		cout<<" digite quanto deseja investir \n";
+		cin>>valor;
+		cout<<"renda mensal de : "<<valor*0.04<<"\n";
+		}
+	
+else
+
+{
+cout<<"tipo de investimento invalido";
+}
+}
+ 	system("pause");
+return 0;
+}
+
+
+
+?????????????????????????????????????????????????????????????????????????????????????????????????
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    float valor,rend;
+    int tipo;
+    char resp;
+    do
+    {
+    cout<<"Digite valor : ";
+    cin>>valor;
+    cout<<"Digite 1-Poupança e 2-Fundos Renda Fixa : ";
+    cin>>tipo;
+    if (tipo==1)
+      {
+        rend = valor*0.03+valor;
+        cout<<"Rendimentos= "<<rend<<"\n";
+      }
+    else
+    {
+      if (tipo == 2)
+        {
+         rend = valor+valor*0.04;
+         cout<<"Rendimentos= "<<rend<<"\n";
+        }
+      else
+      {
+        cout<<"tipo invalido \n";
+      }
+    }
+    cout<<"Deseja repetir s ou n? ";
+    cin>>resp;
+    resp = toupper(resp);
+  } 
+  while(resp != 'N');
+    system("pause");
+    return 0;
+}
